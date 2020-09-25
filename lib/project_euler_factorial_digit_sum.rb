@@ -9,3 +9,8 @@ end
 def sum_of_digits(n)
   n.to_s.split('').reduce(0){|sum, num| sum + num.to_i }
 end
+
+def factorial_digit_sum(n)
+  factorialy = factorial(n)
+  sum_of_digits(factorialy)
+end
